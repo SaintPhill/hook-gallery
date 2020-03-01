@@ -11,6 +11,7 @@
 }
 
 .gallery__img {
+    height: 243px;
     object-fit: cover;
     border-radius: 5px;
 }
