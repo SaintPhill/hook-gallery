@@ -1,0 +1,158 @@
+.contact-us-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-us-form__title {
+    margin-top: 40px;
+    text-align: start;
+    width: 100%;
+}
+
+.contact-us-form__input {
+    border: 1px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 24px;
+    padding-left: 12px;
+}
+
+.contact-us-form__input:focus {
+    border-color: #78CEBF;
+    outline: none;
+}
+
+.inputs-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.inputs-block__label {
+    display: flex;
+    flex-flow: column;
+    text-align: start;
+    width: 45%;
+}
+
+.inputs-block__input {
+    height: 50px;
+}
+
+.inputs-block__date-input {
+    width: 100%;
+    background: url("./assets/date.svg") no-repeat 97%;
+}
+
+.textarea-label {
+    display: flex;
+    width: 35%;
+    flex-flow: column;
+    text-align: start;
+}
+
+.textarea-label__textarea {
+    height: 100%;
+    resize: none;
+}
+
+.checkbox-label {
+    width: 100%;
+    text-align: start;
+    margin-top: 20px;
+    padding-left: 35px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-label__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-label__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.checkbox-label__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-label .checkbox-label__checkbox:checked ~ .checkbox-label__checkmark:after {
+    display: block;
+}
+
+.checkbox-label .checkbox-label__checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #93E08C;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.contact-us-form__button {
+    width: 192px;
+    padding: 12px 24px 12px 24px;
+    margin-top: 24px;
+    border: none;
+    background: linear-gradient(98.3deg, #93E08C -1.93%, #78CEBF 97.03%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-us-form__button:hover {
+    background: linear-gradient(75.3deg, #78CEBF 100%, #78CEBF 97.03%);
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .inputs-block {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .inputs-block__label {
+        width: 100%;
+    }
+
+    .textarea-label {
+        width: 100%;
+    }
+
+    .textarea-label__textarea {
+        width: 100%;
+        height: 100px;
+    }
+}

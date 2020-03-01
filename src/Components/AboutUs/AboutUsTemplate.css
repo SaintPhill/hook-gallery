@@ -1,0 +1,19 @@
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-us__title {
+    margin-bottom: 12px;
+}
+
+.about-us p {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.about-us__info {
+    text-align: start;
+    max-width: 45%;
+}

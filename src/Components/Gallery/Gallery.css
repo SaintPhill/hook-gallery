@@ -1,0 +1,42 @@
+.swiper-wrapper {
+    margin-bottom: 10px;
+}
+
+.swiper-pagination {
+    z-index: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #78CEBF;
+}
+
+.gallery__img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallery__title {
+    text-align: start;
+    margin-bottom: 24px;
+}
+.gallery__button {
+    width: 32px;
+    height: 32px;
+    margin-top: 24px;
+    fill: #C9C9C9;
+    cursor: url("./assets/Vector.svg"), auto;
+}
+
+.gallery__button:hover {
+    fill: #78CEBF;
+}
+
+.gallery__button-left {
+    float: left;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.gallery__button-right {
+    float: right;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
