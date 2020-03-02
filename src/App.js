@@ -3,8 +3,8 @@ import { fetchApi } from "./api/apiJSON";
 
 import { Header } from "./Components/Header/Header";
 import { Gallery } from "./Components/Gallery/Gallery";
-import { AboutUs } from "./Components/AboutUs/AboutUsTemplate";
-import { ContactUs } from "./Components/ContactForm/ContactUs";
+import { AboutUs } from "./Components/AboutUs/AboutUs";
+import { ContactUsForm } from "./Components/ContactForm/ContactUsForm";
 import { Footer } from "./Components/Footer/Footer";
 import "./App.css";
 
@@ -35,7 +35,7 @@ function App() {
                     <div className="page__content">
                         <Gallery title={galleryImages.title} images={galleryImages.images} />
                         <AboutUs info={aboutUsInfo} />
-                        <ContactUs data={formData} />
+                        <ContactUsForm data={formData} />
                     </div>
                 ) : (
                     <div>Loading...</div>

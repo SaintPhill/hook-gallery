@@ -1,11 +1,12 @@
 import * as React from "react";
 import { useState } from "react";
-import "./ContactUs.css"
 import Parser from "html-react-parser";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import "react-day-picker/lib/style.css";
 
-export const ContactUs = ( { data }) => {
+import "./ContactUsForm.css"
+
+export const ContactUsForm = ({ data }) => {
     const [name, handleName] = useState("");
     const [phone, handlePhone] = useState("");
     const [email, handleEmail] = useState("");

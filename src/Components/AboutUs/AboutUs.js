@@ -1,7 +1,7 @@
 import * as React from "react";
 import Parser from 'html-react-parser';
 
-import './AboutUsTemplate.css'
+import './AboutUs.css'
 
 export const AboutUs = ({info}) => {
     return (
